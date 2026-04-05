@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slyium | Best IXL Cheat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #ff1e1e; --accent: #00ffa3; --bg: #050508; --discord: #5865F2; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        
+        .glow { position: fixed; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(255, 30, 30, 0.1) 0%, rgba(0,0,0,0) 70%); top: -10%; right: -10%; z-index: -1; filter: blur(100px); }
+        
+        nav { padding: 40px 8%; display: flex; justify-content: space-between; align-items: center; }
+        .logo-text { font-weight: 800; letter-spacing: 8px; font-size: 1.5rem; text-shadow: 0 0 20px rgba(255,30,30,0.3); }
+
+        .hero { text-align: center; padding: 120px 8% 80px; max-width: 1000px; margin: 0 auto; }
+        h1 { font-size: 4.5rem; font-weight: 800; letter-spacing: -2px; margin-bottom: 20px; line-height: 1; }
+        h1 span { color: var(--primary); }
+        .subtitle { font-size: 1.2rem; opacity: 0.6; margin-bottom: 40px; font-weight: 600; letter-spacing: 1px; }
+        
+        .discord-btn { 
+            background: var(--discord); color: white; padding: 15px 35px; border-radius: 15px; 
+            text-decoration: none; font-weight: 800; display: inline-flex; align-items: center; gap: 10px;
+            transition: 0.3s; border: 1px solid rgba(255,255,255,0.1); margin-bottom: 40px;
+        }
+        .discord-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(88, 101, 242, 0.3); }
+
+        .action-card { 
+            background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255,255,255,0.08); 
+            border-radius: 35px; padding: 60px 40px; backdrop-filter: blur(20px);
+            box-shadow: 0 50px 100px rgba(0,0,0,0.8); max-width: 600px; margin: 0 auto;
+        }
+        
+        .status-header { display: flex; justify-content: center; align-items: center; gap: 15px; margin-bottom: 30px; }
+        .status-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 10px var(--accent); }
+        .tag { font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: var(--primary); font-size: 0.8rem; }
+
+        .copy-btn { 
+            width: 100%; padding: 25px; background: var(--primary); color: white; border: none; 
+            border-radius: 20px; font-weight: 800; cursor: pointer; transition: 0.4s; font-size: 1.2rem;
+            text-transform: uppercase; letter-spacing: 3px;
+        }
+        .copy-btn:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(255,30,30,0.4); }
+        .copy-btn:active { transform: translateY(0); }
+
+        #toast { 
+            position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px);
+            background: var(--accent); color: #000; padding: 15px 40px; border-radius: 50px;
+            font-weight: 800; transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 100;
+        }
+        #toast.show { transform: translateX(-50%) translateY(0); }
+    </style>
+</head>
+<body>
+    <div class="glow"></div>
+    <div id="toast">V1.0.0 COPIED TO CLIPBOARD</div>
+    
+    <nav>
+        <div class="logo-text">SLYIUM</div>
+        <div style="opacity: 0.6; font-weight: 800; color: var(--accent);">V1.0.0</div>
+    </nav>
+
+    <section class="hero">
+        <h1>The Best <span>IXL Cheat.</span></h1>
+        <p class="subtitle">Join our community for the latest updates and bypasses.</p>
+        
+        <a href="https://discord.gg/Mwx2EmnXn9" target="_blank" class="discord-btn">Join Discord Community</a>
+
+        <div class="action-card">
+            <div class="status-header">
+                <div class="status-dot"></div>
+                <div class="tag">V1.0.0 Undetected</div>
+            </div>
+            
+            <button class="copy-btn" onclick="copyScript()">Copy Script</button>
+        </div>
+    </section>
+
+    <script>
+        function copyScript() {
+            // The script is stored in this variable but never shown on the UI
+            const ixlScript = `javascript:(function(){ const _0x4f22 = "c2stbmF2eS1aTnBuMmRsUGhYdl9NZ2d1TlJnOERCSlFOUlpKY0JqWGVhX1JRQjV4emRB"; const API_URL = "https://api.navy/v1/chat/completions"; const MODEL_ID = "gpt-5.1-chat-latest"; const LOGO_URL = "https://cdn.pixabay.com/photo/2022/08/22/02/05/logo-7402513_1280.png"; let config = { color: '#ff1e1e', accent: '#00ffa3' }; const styleTag = document.createElement('style'); styleTag.innerHTML = "@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap'); #sly-popup { position:fixed; top:10%; left:50%; transform:translateX(-50%); width:95%; max-width:460px; background: rgba(10, 10, 15, 0.9); backdrop-filter: blur(35px) saturate(200%); border-radius: 40px; box-shadow: 0 30px 100px rgba(0,0,0,0.7), inset 0 0 0 1px rgba(255,255,255,0.1); z-index:999999; font-family:'Plus Jakarta Sans', sans-serif; color:#fff; overflow:hidden; touch-action: none; } .sly-header { padding:30px 20px 15px; text-align:center; cursor:grab; } .sly-header:active { cursor:grabbing; } .sly-logo { width:52px; height:52px; margin:0 auto; display:block; filter: drop-shadow(0 0 15px \${config.color}); } .sly-title { font-size:1.4em; font-weight:800; letter-spacing:8px; margin-top:12px; pointer-events:none; } .sly-viewport { position: relative; margin: 0 24px 20px; background: rgba(0, 0, 0, 0.3); border-radius: 28px; border: 1px solid rgba(255, 255, 255, 0.05); height: 380px; overflow: hidden; } .sly-scroller { height: 100%; overflow-y: auto; padding: 0 20px 20px; scrollbar-width: none; } .sly-scroller::-webkit-scrollbar { display: none; } .sly-grid-item { background: rgba(255,255,255,0.03); border-radius: 22px; padding: 20px; margin-top: 12px; border: 1px solid rgba(255,255,255,0.03); } .sly-q-label { color: rgba(255,255,255,0.4); font-size: 0.7em; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; } .sly-a-text { color: \${config.accent}; font-size: 1.1em; font-weight: 700; } .sly-footer { padding: 0 24px 24px; display: flex; flex-direction: column; align-items: center; } .sly-btn { display: inline-flex; justify-content: center; align-items: center; min-width: 200px; width: fit-content; padding: 18px 45px; background: linear-gradient(135deg, \${config.color}, #b31212); color:#fff; border:none; border-radius: 24px; font-weight:800; cursor:pointer; font-size:1.05em; letter-spacing:2px; box-shadow: 0 10px 30px rgba(255, 30, 30, 0.3); text-transform: uppercase; transition: transform 0.2s; } .sly-btn:hover { transform: scale(1.02); } .sly-status-msg { font-size: 0.7em; color: rgba(255,255,255,0.2); text-align: center; margin-top: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; cursor: pointer; }"; document.head.appendChild(styleTag); const popup = document.createElement('div'); popup.id = 'sly-popup'; popup.innerHTML = \`<div class="sly-header" id="sly-drag"><img class="sly-logo" src="\${LOGO_URL}"><div class="sly-title">SLYIUM</div></div><div class="sly-viewport"><div class="sly-scroller" id="sly-scroller"><div id="sly-answer-card" style="padding-top:20px;"></div></div></div><div class="sly-footer"><button id="sly-solve-btn" class="sly-btn">GET ANSWER</button><div class="sly-status-msg" id="sly-quit">Disconnect</div></div>\`; document.body.appendChild(popup); let isDragging = false, currentX, currentY, initialX, initialY, xOffset = 0, yOffset = 0; const dragStart = (e) => { initialX = (e.type === "touchstart" ? e.touches[0].clientX : e.clientX) - xOffset; initialY = (e.type === "touchstart" ? e.touches[0].clientY : e.clientY) - yOffset; if (e.target.id === "sly-drag" || e.target.parentNode.id === "sly-drag") isDragging = true; }; const dragEnd = () => { isDragging = false; }; const drag = (e) => { if (isDragging) { e.preventDefault(); currentX = (e.type === "touchmove" ? e.touches[0].clientX : e.clientX) - initialX; currentY = (e.type === "touchmove" ? e.touches[0].clientY : e.clientY) - initialY; xOffset = currentX; yOffset = currentY; requestAnimationFrame(() => { popup.style.transform = "translate(calc(-50% + " + currentX + "px), " + currentY + "px)"; }); } }; popup.addEventListener("touchstart", dragStart, false); document.addEventListener("touchend", dragEnd, false); document.addEventListener("touchmove", drag, false); popup.addEventListener("mousedown", dragStart, false); document.addEventListener("mouseup", dragEnd, false); document.addEventListener("mousemove", drag, false); const performOmniFill = (ansArray) => { const textFields = Array.from(document.querySelectorAll('input[type="text"], textarea, [contenteditable="true"]')).filter(f => f.offsetParent !== null); textFields.forEach((field, i) => { if (ansArray[i]) { const val = ansArray[i].trim(); field.isContentEditable ? (field.innerText = val) : (field.value = val); ['input', 'change', 'blur'].forEach(ev => field.dispatchEvent(new Event(ev, { bubbles: true }))); } }); const clickableItems = Array.from(document.querySelectorAll('span, b, i, p > span')).filter(el => { return ansArray.some(ans => el.innerText.toLowerCase().includes(ans.toLowerCase())); }); clickableItems.forEach(item => item.click()); }; document.getElementById('sly-solve-btn').onclick = async function() { const card = document.getElementById('sly-answer-card'); this.disabled = true; this.innerText = "WAITING..."; try { const res = await fetch(API_URL, { method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer " + atob(_0x4f22) }, body: JSON.stringify({ model: MODEL_ID, messages: [{ role: "user", content: "Identify all answers/corrections. One per line. Content: " + document.body.innerText.slice(0, 2500) }] }) }); const data = await res.json(); if (data?.choices?.[0]) { const raw = data.choices[0].message.content.trim(); const lines = raw.split(/\\n+/).filter(l => l.trim().length > 0); card.innerHTML = lines.map((l, i) => '<div class="sly-grid-item"><div class="sly-q-label">Entry ' + (i+1) + '</div><div class="sly-a-text">' + l.trim() + '</div></div>').join(''); performOmniFill(lines); document.getElementById('sly-scroller').scrollTop = 0; } } catch (err) { card.innerHTML = '<div class="sly-grid-item">Error</div>'; } finally { this.disabled = false; this.innerText = "GET ANSWER"; } }; document.getElementById('sly-quit').onclick = () => popup.remove(); })();`;
+
+            navigator.clipboard.writeText(ixlScript);
+            
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 3000);
+        }
+    </script>
+</body>
+</html>
